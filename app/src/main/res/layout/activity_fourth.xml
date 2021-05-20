@@ -5,24 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
-
-    <Button
-        android:id="@+id/buttonPassInteger"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/btn1" />
-
-    <Button
-        android:id="@+id/buttonPassChar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/btn2" />
+    tools:context=".FourthActivity">
 
     <TextView
         android:id="@+id/textViewDouble"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:text="@string/text1" />
 </LinearLayout>

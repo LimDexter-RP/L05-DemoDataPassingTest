@@ -6,10 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     Button btnPassInteger;
     Button btnPassChar;
+    TextView textViewDouble;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
         btnPassInteger = findViewById(R.id.buttonPassInteger);
         btnPassChar = findViewById(R.id.buttonPassChar);
+        textViewDouble = findViewById(R.id.textViewDouble);
 
         btnPassInteger.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,5 +37,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
-    }
-}
+        textViewDouble.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, FourthActivity.class);
+                i.putExtra("value1", 99.99);
+                startActivity(i);
+            }
+        });
+
+}}
