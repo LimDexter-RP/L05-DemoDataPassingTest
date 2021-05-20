@@ -24,24 +24,24 @@ public class MainActivity extends AppCompatActivity {
         btnPassInteger.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, SecondActivity.class);
-                i.putExtra("value", 1);
-                startActivity(i);
+                Intent j = new Intent(MainActivity.this, AnswerActivity.class);
+                j.putExtra("Value", 1);
+                startActivity(j);
             }
         });
         btnPassChar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this,ThirdActivity.class);
-                i.putExtra("Char", "a");
-                startActivity(i);
+                Intent x = new Intent(MainActivity.this, AnswerActivity.class);
+                x.putExtra("Char", 'a');
+                startActivity(x);
             }
         });
         textViewDouble.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, FourthActivity.class);
-                i.putExtra("value1", 99.99);
+                Intent i = new Intent(MainActivity.this, AnswerActivity.class);
+                i.putExtra("Decimal", 99.99);
                 startActivity(i);
             }
         });
